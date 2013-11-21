@@ -1,0 +1,43 @@
+<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+  $(function() {
+
+    var url = 'http://semver.herokuapp.com/node.json'
+    $.getJSON(url, function(versions) {
+      window.versions = versions;
+      console.log(versions);
+      $("#stable").text(versions.stable).addClass('active')
+    })
+
+  })
+</script>
+
+<style type="text/css">
+  body {
+    background-color: #46483E;
+    color: white;
+    font-family: "helvetica neue", helvetica, arial;
+  }
+
+  #content {
+    position: relative;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    max-width: 640px;
+    padding: 0;
+    /*background: green;*/
+  }
+
+  h1 {
+    color: #8BC84B;
+    font-size: 200px;
+    text-align: center;
+  }
+
+</style>
+
+<body>
+  <div id="content">
+    <h1 id="stable">X</h1>
+  </div>
+</body>
