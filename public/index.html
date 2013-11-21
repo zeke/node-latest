@@ -9,6 +9,7 @@
       $("#stable").text(versions.stable).addClass('active')
       $("#unstable").text(versions.unstable).addClass('active')
       $("p").addClass('active')
+      $("#content").addClass('active')
     })
 
   })
@@ -27,6 +28,16 @@
     width: 100%;
     max-width: 640px;
     padding: 0;
+    -webkit-transform: translate(0, -100px);
+    -moz-transform: translate(0, -100px);
+    transform: translate(0, -100px);
+    transition: all 0.3s;
+  }
+
+  #content.active {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   h1 {
@@ -40,7 +51,7 @@
     transition: all 0.3s;
   }
 
-  .active {
+  h1.active, p.active {
     opacity: 1;
   }
 
