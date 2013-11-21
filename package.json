@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "zeke",
+  "license": "MIT",
   "dependencies": {
     "express": "~3.4.4",
     "logfmt": "~0.16.0"
