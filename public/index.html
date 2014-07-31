@@ -2,7 +2,7 @@
 <script>
   $(function() {
 
-    var url = 'https://semver.herokuapp.com/node.json'
+    var url = 'https://semver.io/node.json'
     $.getJSON(url, function(versions) {
       window.versions = versions;
       $("#stable").text(versions.stable).addClass('active')
