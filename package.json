@@ -1,7 +1,7 @@
 {
   "name": "what-is-the-latest-version-of-node.com",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "What is the latest version of Node?",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"

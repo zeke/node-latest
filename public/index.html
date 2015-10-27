@@ -6,7 +6,6 @@
     $.getJSON(url, function(versions) {
       window.versions = versions;
       $("#stable").text(versions.stable).addClass('active')
-      $("#unstable").text(versions.unstable).addClass('active')
       $("p").addClass('active')
       $("#content").addClass('active')
       $("footer").addClass('active')
@@ -79,11 +78,6 @@
     transition: all 0.3s;
   }
 
-  #unstable {
-    color: white;
-  }
-
-
   footer {
     position: relative;
     margin: 0;
@@ -119,14 +113,10 @@
 <body>
   <div id="wrapper">
     <div id="content">
-      <h1 id="stable">X</h1>
-      <p>
-        If you're feeling brave, use the latest unstable
-        version: <span id="unstable">X</span>
-      </p>
+      <h1 id="stable">...</h1>
     </div>
     <footer>
-      Powered by <a href="http://semver.io">semver.io</a>, open-sourced on <a href="https://github.com/zeke/node-latest">GitHub</a>, and running on <a href="https://heroku.com">Heroku</a>.
+      Powered by <a href="https://semver.io">semver.io</a>, open-sourced on <a href="https://github.com/zeke/node-latest">GitHub</a>, and running on <a href="https://heroku.com">Heroku</a>.
     </footer>
   </div>
 
